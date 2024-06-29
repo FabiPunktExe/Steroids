@@ -30,8 +30,7 @@ tasks {
 
     processResources {
         filesMatching("fabric.mod.json") {
-            expand(mapOf("version" to version))
-            expand(mapOf("loader_version" to loaderVersion))
+            expand(mapOf("version" to version, "loader_version" to loaderVersion))
         }
     }
 
