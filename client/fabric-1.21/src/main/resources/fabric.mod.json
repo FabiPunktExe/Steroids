@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "steroids",
+  "version": "${version}",
+  "name": "Steroids",
+  "description": "Minecraft on steroids - A mod for builders",
+  "authors": [
+    "Fabi.exe"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/steroids/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": ["de.fabiexe.steroids.SteroidsFabricClient"]
+  },
+  "mixins": ["steroids.mixins.json"],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "1.21"
+  }
+}
