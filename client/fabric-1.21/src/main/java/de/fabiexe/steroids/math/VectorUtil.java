@@ -1,6 +1,5 @@
-package de.fabiexe.steroids;
+package de.fabiexe.steroids.math;
 
-import de.fabiexe.steroids.math.Vector;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 

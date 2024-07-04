@@ -190,10 +190,10 @@ public class Vector {
      * @return The distance between the two vectors.
      */
     public double distance(@NotNull Vector other) {
-        double dx = x - other.x;
-        double dy = y - other.y;
-        double dz = z - other.z;
-        return Math.sqrt(dx * dx + dy * dy + dz * dz);
+        double deltaX = x - other.x;
+        double deltaY = y - other.y;
+        double deltaZ = z - other.z;
+        return Math.sqrt(deltaX * deltaX + deltaY * deltaY + deltaZ * deltaZ);
     }
 
     /**
