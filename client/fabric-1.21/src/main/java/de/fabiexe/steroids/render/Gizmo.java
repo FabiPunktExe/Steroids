@@ -22,12 +22,14 @@ public class Gizmo {
     public void render(PoseStack poseStack) {
         poseStack.pushPose();
         Camera camera = Minecraft.getInstance().gameRenderer.getMainCamera();
-        // poseStack.translate(entity.position().x + 0.5 - camera.getPosition().x,
-        // entity.position().y + 0.5 - camera.getPosition().y, entity.position().z + 0.5 -
-        // camera.getPosition().z);
         float distance = (float) camera.getPosition().distanceTo(entity.position());
         poseStack.scale(distance, distance, distance);
-        renderMovement(poseStack, 0.5f, 5, 0.05f, 0.15f, 8);
+        float baseLength = 0.5f;
+        float lineWidth = 5f;
+        float coneRadius = 0.05f;
+        float coneLength = 0.15f;
+        int coneTriangles = 8;
+        renderMovement(poseStack, baseLength, lineWidth, coneRadius, coneLength, coneTriangles);
         poseStack.popPose();
     }
 
