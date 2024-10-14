@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("fabric-loom") version "1.6-SNAPSHOT"
+    id("fabric-loom") version "1.8.10"
 }
 
 repositories {
